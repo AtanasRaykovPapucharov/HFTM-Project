@@ -1,0 +1,52 @@
+.container-flex-col,
+.container-flex-row,
+.container-flex-col-rev,
+.container-flex-row-rev {
+    display: flex;
+}
+
+.container-flex-col {
+    flex-direction: column;
+}
+
+.container-flex-row {
+    flex-direction: row;
+}
+
+.container-flex-col-rev {
+    flex-direction: column-reverse;
+}
+
+.container-flex-row-rev {
+    flex-direction: row-reverse;
+}
+
+.flex-item-1 {
+    flex: 1;
+}
+
+.flex-item-2 {
+    flex: 2;
+}
+
+.flex-item-3 {
+    flex: 3;
+}
+
+.flex-item-4 {
+    flex: 4;
+}
+
+.flex-item-5 {
+    flex: 5;
+}
+
+.flex-item-6 {
+    flex: 6;
+}
+
+@media all and (min-width: 768px) {
+    .container-flex-col {
+        flex-direction: row;
+    }
+}

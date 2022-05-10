@@ -1,0 +1,73 @@
+@import url('https://use.fontawesome.com/releases/v5.15.3/css/all.css');
+
+body .main-wrapper #main-nav .nav {
+    /* border: 1px solid black; */
+    margin: 70px 2px 2px 2px ;
+}
+
+body .main-wrapper #main-nav .nav .menu-btn {
+    text-align: center;
+}
+
+body .main-wrapper #main-nav .nav .menu-btn * {
+    border: 3px solid black;
+    background-color: rgba(255, 165, 0);
+    font-weight: bolder;
+    border-radius: 50%;
+}
+
+body .main-wrapper #main-nav .nav .menu-btn *:hover {
+    background-color: rgba(255, 165, 0, 0.5);
+}
+
+body .main-wrapper #main-nav .nav .menu-btn #open {
+    width: 80%;
+    height: 30px;
+    font-size: 16px;
+    margin-left: 7px;
+}
+
+body .main-wrapper #main-nav .nav .menu-btn #close {
+    display: none;
+    padding: 6px 0 0 0;
+    width: 29px;
+    height: 23px;
+    margin-left: 25px;
+}
+
+body .main-wrapper #main-nav .nav .links #links-wrapper {
+    list-style-type: none;
+    visibility: hidden;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+body .main-wrapper #main-nav .nav .links #links-wrapper .link {
+   background-color: black;
+   margin-bottom: 5px;
+   padding: 5px;
+   height: 50px;
+   text-decoration: none;
+   color: white;
+}
+
+body .main-wrapper #main-nav .nav .links .link:hover {
+   background-color: grey;
+}
+
+@media all and (min-width: 768px) {
+    /* body .main-wrapper #main-nav .nav .menu-btn #open,
+    body .main-wrapper #main-nav .nav .menu-btn #close {
+        display: none;
+    }
+
+    body .main-wrapper #main-nav .nav .links {
+        padding: 0 2px 0 2px;
+    }
+
+    body .main-wrapper #main-nav .nav .links #links-wrapper {
+        visibility: visible;
+    } */
+    
+}
