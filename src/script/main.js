@@ -4,14 +4,15 @@ let mainView = document.getElementById("main-view");
 
 let isMenuOpen = false;
 
-// get and append base components
+// get and append basic components
 getAndAppend("header", mainHeader);
 getAndAppend("nav", mainNav);
+getAndAppend("home", mainView);
 
 // event listener
 document.addEventListener('click', function (event) {
     let eventTarget = event.target; // HTML tag onClicked
-    let routes = "about,photos,fitnes,music,contacts";
+    let routes = "home,about,photos,fitnes,music,contacts";
     let menuButtons = "open,close";
     let openBtn = document.getElementById("open");
     let closeBtn = document.getElementById("close");
@@ -19,6 +20,11 @@ document.addEventListener('click', function (event) {
 	
     if(eventTarget.id && routes.includes(eventTarget.id)) {
         getAndAppend(eventTarget.id, mainView);
+        linksWrapper.style.visibility = "hidden";
+        linksWrapper.style.height = 0;
+        openBtn.style.display = "inherit";
+        closeBtn.style.display = "none"
+        isMenuOpen = !isMenuOpen;
     }
     else if(eventTarget.id && menuButtons.includes(eventTarget.id)) {
         if(!isMenuOpen) {

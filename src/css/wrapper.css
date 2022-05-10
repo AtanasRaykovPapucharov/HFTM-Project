@@ -6,11 +6,21 @@ body {
     background-color: rgb(214, 206, 216);
 }
 
+body * {
+    overflow: hidden;
+    outline: none;
+}
+
 body .main-wrapper {
-    max-width: 360px;
+    width: 360px;
+    min-height: 600px;
     text-align: center;
+    border: 1px solid grey;
+    box-shadow: 2px 2px 2px 2px grey;
 }
 
 @media all and (min-width: 768px) {
-   
+   body {
+       padding-left: 30%;
+   }
 }
