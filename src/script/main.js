@@ -10,16 +10,19 @@ getAndAppend("nav", mainNav);
 getAndAppend("home", mainView);
 
 // event listener
-document.addEventListener('click', function (event) {
-    let eventTarget = event.target; // HTML tag onClicked
+document.addEventListener("click", function (event) { // tag.addEventListener("eventName", function name() {}, false)
+    let eventTarget = event.target; // HTML element onClicked
+
     let routes = "home,about,photos,fitnes,music,contacts";
     let menuButtons = "open,close";
+
     let openBtn = document.getElementById("open");
     let closeBtn = document.getElementById("close");
     let linksWrapper = document.getElementById("links-wrapper");
 	
     if(eventTarget.id && routes.includes(eventTarget.id)) {
         getAndAppend(eventTarget.id, mainView);
+        
         linksWrapper.style.visibility = "hidden";
         linksWrapper.style.height = 0;
         openBtn.style.display = "inherit";
