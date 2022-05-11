@@ -9,6 +9,8 @@ getAndAppend("header", mainHeader);
 getAndAppend("nav", mainNav);
 getAndAppend("home", mainView);
 
+window.location.replace(window.location.origin + "/#/home");
+
 // event listener
 document.addEventListener("click", function (event) { // tag.addEventListener("eventName", function name() {}, false)
     let eventTarget = event.target; // HTML element onClicked
