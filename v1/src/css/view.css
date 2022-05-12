@@ -1,0 +1,21 @@
+#main-view h1 {
+    background-color: black;
+    color: white;
+    border-top: 5px solid orange;
+    margin-top: 5px;
+}
+
+#main-view main.view-wrapper {
+    background-color: black;
+    color: white;
+    border-top: 5px solid orange;
+    margin-top: 5px;
+    padding: 10px 20px 10px 20px;
+    text-align: justify;
+    min-height: 400px;
+}
+
+#main-view main.music,
+#main-view main.photos {
+    padding: 0;
+}

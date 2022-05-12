@@ -23,7 +23,6 @@ body .main-wrapper #main-header .header .title {
 body .main-wrapper #main-header .header .title .text {
     margin: 0;
     padding: 2px;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 @media all and (min-width: 768px) {

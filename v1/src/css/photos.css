@@ -3,8 +3,7 @@
     max-width: 800px;
     height: 200px;
     position: relative;
-    overflow: hidden;  /* <===  */
-    /* border-radius: 15px; */
+    overflow: hidden;
   }
   
 .slide {
@@ -12,7 +11,7 @@
     max-width: 800px;
     height: 200px;
     position: absolute;
-    transition: all 0.5s;
+    transition: all 1s;
 }
   
 .slide img {
@@ -28,22 +27,24 @@
     padding: 10px;
     border: none;
     border-radius: 50%;
-    z-index: 10px;
-    cursor: pointer;
-    background-color: #fff;
+    background-color: orange;
     font-size: 18px;
+    font-weight: bolder;
+    z-index: 10px;
+    opacity: 0.5;
+    cursor: pointer;
 }
   
 .btn:active {
     transform: scale(1.1);
 }
   
-#btn-prev {
+.btn-prev {
     top: 45%;
     left: 2%;
 }
   
-#btn-next {
+.btn-next {
     top: 45%;
     right: 2%;
 }

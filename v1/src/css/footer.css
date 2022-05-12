@@ -1,0 +1,29 @@
+body .main-wrapper #main-footer {
+    text-align: center;
+    width: 360px;
+    margin-top: 20px;
+}
+
+body .main-wrapper #main-footer .header {
+    height: 60px;
+}
+
+body .main-wrapper #main-footer .header .logo {
+    background-color: orange;
+    color: black;
+}
+
+body .main-wrapper #main-footer .header .title {
+    background-color: black;
+    color: whitesmoke;
+    font-size: 12px;
+}
+
+body .main-wrapper #main-footer .header .title .text {
+    margin: 0;
+    padding: 2px;
+}
+
+@media all and (min-width: 768px) {
+    
+}
